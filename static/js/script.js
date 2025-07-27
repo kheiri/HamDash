@@ -172,13 +172,13 @@ document.addEventListener('DOMContentLoaded', function () {
         const slideWidth = slides[0].clientWidth;
 
         next.addEventListener('click', () => {
-            index = (index + 1) % slides.length;
-            slider.style.transform = `translateX(-${index * slideWidth}px)`;
+            index = (index - 1 + slides.length) % slides.length;
+            slider.style.transform = `translateX(${index * slideWidth}px)`;
         });
 
         prev.addEventListener('click', () => {
-            index = (index - 1 + slides.length) % slides.length;
-            slider.style.transform = `translateX(-${index * slideWidth}px)`;
+            index = (index + 1) % slides.length;
+            slider.style.transform = `translateX(${index * slideWidth}px)`;
         });
     }
 });

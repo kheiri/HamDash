@@ -7,7 +7,6 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/4.1.17/framer-motion.cjs.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     <link rel="stylesheet" href="static/css/style.css">
@@ -23,7 +22,7 @@
                 </div>
             </div>
             <nav class="mt-10">
-                <a class="flex items-center px-6 py-2 mt-4 text-gray-100 bg-gray-700 bg-opacity-25" href="dashboard.html">
+                <a class="flex items-center px-6 py-2 mt-4 text-gray-100 bg-gray-700 bg-opacity-25" href="#">
                     <i class="w-6 h-6 fas fa-home"></i>
                     <span class="mx-3">داشبورد</span>
                 </a>
@@ -56,7 +55,7 @@
                         <a class="flex items-center px-12 py-2 text-gray-500 hover:bg-gray-700 hover:bg-opacity-25 hover:text-gray-100"
                             href="#">پروفایل</a>
                         <a class="flex items-center px-12 py-2 text-gray-500 hover:bg-gray-700 hover:bg-opacity-25 hover:text-gray-100"
-                            href="cards.html">مدیریت کارت‌ها</a>
+                            href="#">مدیریت کارت‌ها</a>
                         <a class="flex items-center px-12 py-2 text-gray-500 hover:bg-gray-700 hover:bg-opacity-25 hover:text-gray-100"
                             href="#">اطلاعات ارتباطی</a>
                         <a class="flex items-center px-12 py-2 text-gray-500 hover:bg-gray-700 hover:bg-opacity-25 hover:text-gray-100"
@@ -64,7 +63,7 @@
                         <a class="flex items-center px-12 py-2 text-gray-500 hover:bg-gray-700 hover:bg-opacity-25 hover:text-gray-100"
                             href="#">راهنما</a>
                         <a class="flex items-center px-12 py-2 text-gray-500 hover:bg-gray-700 hover:bg-opacity-25 hover:text-gray-100"
-                            href="users.html">مدیریت کاربران</a>
+                            href="#">مدیریت کاربران</a>
                         <a class="flex items-center px-12 py-2 text-gray-500 hover:bg-gray-700 hover:bg-opacity-25 hover:text-gray-100"
                             href="#">تنظیمات</a>
                     </div>
@@ -80,9 +79,20 @@
                     <button @click="sidebarOpen = !sidebarOpen" class="text-gray-500 focus:outline-none lg:hidden">
                         <i class="w-6 h-6 fas fa-bars"></i>
                     </button>
+                    <div class="relative mx-4 lg:mx-0">
+                        <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+                            <i class="w-5 h-5 text-gray-500 fas fa-search"></i>
+                        </span>
+
+                        <input class="w-32 pl-10 pr-4 text-indigo-600 border-gray-200 rounded-md sm:w-64 focus:border-indigo-600 focus:ring focus:ring-opacity-40 focus:ring-indigo-500"
+                            type="text" placeholder="جستجو">
+                    </div>
                 </div>
 
                 <div class="flex items-center">
+                    <div class="flex items-center mr-4">
+                        <span class="text-sm font-medium">یکشنبه، ۶ مرداد ۱۴۰۴</span>
+                    </div>
                     <button id="theme-toggle" class="px-4 py-2 mr-4 text-gray-700 bg-gray-200 rounded-md dark:bg-gray-700 dark:text-gray-200">
                         <i class="fas fa-moon"></i>
                     </button>
@@ -114,7 +124,7 @@
             <!-- Main content -->
             <main class="flex-1 overflow-x-hidden overflow-y-auto bg-gray-200">
                 <div class="container px-6 py-8 mx-auto">
-                    <!-- Page content will be injected here -->
+                    <h3 class="text-3xl font-medium text-gray-700">داشبورد</h3>
                 </div>
             </main>
         </div>

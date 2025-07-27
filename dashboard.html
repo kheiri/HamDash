@@ -14,7 +14,7 @@
 <body class="bg-gray-100 dark:bg-gray-900" x-data="{ sidebarOpen: false }">
     <div class="flex h-screen bg-gray-200">
         <!-- Sidebar -->
-        <div class="fixed inset-y-0 right-0 z-30 w-64 overflow-y-auto transition duration-300 ease-in-out transform translate-x-0 bg-gray-800"
+        <div class="fixed inset-y-0 right-0 z-30 w-64 overflow-y-auto transition duration-300 ease-in-out transform bg-gray-800 lg:translate-x-0 lg:static lg:inset-0"
             :class="{ 'translate-x-full': !sidebarOpen, 'translate-x-0': sidebarOpen }">
             <div class="flex items-center justify-center mt-8">
                 <div class="flex items-center">
@@ -122,7 +122,7 @@
             </header>
 
             <!-- Main content -->
-            <main class="flex-1 overflow-x-hidden overflow-y-auto bg-gray-200">
+            <main class="flex-1 overflow-x-hidden overflow-y-auto bg-gray-200 lg:mr-64">
                 <div class="container px-6 py-8 mx-auto">
                     <h3 class="text-3xl font-medium text-gray-700">داشبورد</h3>
                 </div>

@@ -80,4 +80,16 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
     }
+
+    // Calendar
+    $("#calendar").pDatepicker({
+        inline: true,
+        altField: '#calendar-alt',
+        altFormat: 'L',
+        calendar:{
+            persian: {
+                locale: 'fa'
+            }
+        }
+    });
 });

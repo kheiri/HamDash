@@ -160,13 +160,37 @@
                 <div class="container px-6 py-8 mx-auto">
                     <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                         <div class="p-4 bg-white rounded-lg shadow-md">
-                            <canvas id="activityChart"></canvas>
+                            <div class="flex items-center justify-between">
+                                <h4 class="text-lg font-semibold">میزان فعالیت</h4>
+                                <select class="px-2 py-1 text-sm border rounded-md">
+                                    <option value="daily">روزانه</option>
+                                    <option value="weekly">هفتگی</option>
+                                    <option value="monthly">ماهانه</option>
+                                </select>
+                            </div>
+                            <canvas id="activityChart" class="mt-4"></canvas>
                         </div>
                         <div class="p-4 bg-white rounded-lg shadow-md">
-                            <canvas id="incomeChart"></canvas>
+                            <div class="flex items-center justify-between">
+                                <h4 class="text-lg font-semibold">میزان درآمد</h4>
+                                <select class="px-2 py-1 text-sm border rounded-md">
+                                    <option value="daily">روزانه</option>
+                                    <option value="weekly">هفتگی</option>
+                                    <option value="monthly">ماهانه</option>
+                                </select>
+                            </div>
+                            <canvas id="incomeChart" class="mt-4"></canvas>
                         </div>
                         <div class="p-4 bg-white rounded-lg shadow-md">
-                            <canvas id="scanChart"></canvas>
+                            <div class="flex items-center justify-between">
+                                <h4 class="text-lg font-semibold">میزان اسکن‌شده</h4>
+                                <select class="px-2 py-1 text-sm border rounded-md">
+                                    <option value="daily">روزانه</option>
+                                    <option value="weekly">هفتگی</option>
+                                    <option value="monthly">ماهانه</option>
+                                </select>
+                            </div>
+                            <canvas id="scanChart" class="mt-4"></canvas>
                         </div>
                     </div>
                     <div class="grid grid-cols-1 gap-6 mt-6 lg:grid-cols-3">

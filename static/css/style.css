@@ -1,0 +1,7 @@
+body {
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+.gradient-bg {
+    background: linear-gradient(to bottom, #2563EB, #F97316);
+}
